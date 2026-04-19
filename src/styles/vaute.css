@@ -1,0 +1,120 @@
+/* ─── VAULTÉ GLOBAL CUSTOM STYLES ─── */
+
+/* Global font */
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Skip to main content – WCAG Operable */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 16px;
+  background: #0a0a0a;
+  color: #fafafa;
+  padding: 8px 16px;
+  z-index: 9999;
+  border-radius: 2px;
+  font-size: 13px;
+  text-decoration: none;
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 16px;
+}
+
+/* High-contrast focus state – WCAG Operable (keyboard navigability) */
+:focus-visible {
+  outline: 2px solid #0a0a0a !important;
+  outline-offset: 3px !important;
+  border-radius: 2px !important;
+}
+
+/* Shimmer animation for skeleton loaders */
+@keyframes shimmer {
+  0% { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+.skeleton-shimmer {
+  background: linear-gradient(90deg, #eeeeee 25%, #f8f8f8 50%, #eeeeee 75%);
+  background-size: 400px 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
+/* Toast slide animations */
+@keyframes toastSlideIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes toastSlideOut {
+  to { opacity: 0; transform: translateY(16px); }
+}
+.toast-enter { animation: toastSlideIn 0.28s ease forwards; }
+.toast-exit  { animation: toastSlideOut 0.3s ease forwards; }
+
+/* Sidebar slide animations */
+@keyframes slideInRight {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(0); }
+}
+@keyframes slideOutRight {
+  from { transform: translateX(0); }
+  to   { transform: translateX(100%); }
+}
+.panel-enter { animation: slideInRight 0.32s cubic-bezier(0.4,0,0.2,1) forwards; }
+.panel-exit  { animation: slideOutRight 0.28s cubic-bezier(0.4,0,0.2,1) forwards; }
+
+/* Overlay fade */
+@keyframes fadeIn  { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeOut { from { opacity: 1; } to { opacity: 0; } }
+
+/* Cart/Help overlay */
+.overlay-enter { animation: fadeIn  0.22s ease forwards; }
+.overlay-exit  { animation: fadeOut 0.22s ease forwards; }
+
+/* Nav underline active */
+.nav-active {
+  border-bottom: 2px solid #0a0a0a !important;
+}
+
+/* Accordion body transition */
+.accordion-body {
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+/* Product image zoom */
+.product-img-container img {
+  transition: transform 0.4s ease;
+}
+.product-card:hover .product-img-container img {
+  transform: scale(1.04);
+}
+
+/* Heart pulse on wishlist add */
+@keyframes heartPulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+.heart-pulse {
+  animation: heartPulse 0.3s ease;
+}
+
+/* Smooth page scrolling */
+html { scroll-behavior: smooth; }
+
+/* Custom scrollbar for sidebars */
+.custom-scroll::-webkit-scrollbar { width: 4px; }
+.custom-scroll::-webkit-scrollbar-track { background: transparent; }
+.custom-scroll::-webkit-scrollbar-thumb { background: #d4d4d4; border-radius: 2px; }
+.custom-scroll::-webkit-scrollbar-thumb:hover { background: #a0a0a0; }
+
+/* Size guide chart */
+.size-chart td, .size-chart th {
+  padding: 8px 12px;
+  border-bottom: 1px solid #e4e4e4;
+  font-size: 12px;
+  text-align: left;
+}
+.size-chart th { font-weight: 500; color: #6b6b6b; }

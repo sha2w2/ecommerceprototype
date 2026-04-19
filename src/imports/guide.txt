@@ -1,0 +1,72 @@
+Designing a website that meets "peak" HCI standards means balancing psychological principles with technical execution. [cite_start]Since your assignment requires a "perfect score" according to **Jakob Nielsen’s 10 Usability Heuristics** and specific functional criteria, here is a comprehensive breakdown of the essential standards. [cite: 8, 31, 101]
+
+---
+
+## 1. Jakob Nielsen’s 10 Usability Heuristics
+[cite_start]These are the core requirements for your project. [cite: 31, 134] To score perfectly, your prototype must implement each of these:
+
+* [cite_start]**Visibility of System Status:** Always keep users informed about what is happening through feedback within a reasonable time (e.g., a progress bar for uploads). [cite: 32, 33, 34]
+* [cite_start]**Match Between System and Real World:** Use concepts and language familiar to the user rather than technical jargon (e.g., using a "trash can" icon for deleting). [cite: 35, 36, 37]
+* [cite_start]**User Control and Freedom:** Provide a clearly marked "emergency exit" like an "Undo" button so users can recover from accidental actions. [cite: 38, 39, 40]
+* [cite_start]**Consistency and Standards:** Follow platform conventions so users don't have to wonder if different words or actions mean the same thing (e.g., using a gear icon for "Settings"). [cite: 41, 42, 43, 44]
+* [cite_start]**Error Prevention:** The best designs prevent problems from occurring, such as graying out a "Submit" button until all required fields are filled. [cite: 45, 46, 47]
+* [cite_start]**Recognition Rather Than Recall:** Minimize memory load by making elements and options visible; users shouldn't have to remember info from one page to the next. [cite: 48, 49, 50]
+* [cite_start]**Flexibility and Efficiency of Use:** Provide shortcuts for power users (like **Ctrl+C / Ctrl+V**) that remain hidden from novices. [cite: 52, 53, 54]
+* **Aesthetic and Minimalist Design:** Eliminate irrelevant information. [cite_start]Every extra unit of info competes with the relevant units. [cite: 55, 56, 57]
+* [cite_start]**Help Users Recognize, Diagnose, and Recover from Errors:** Use plain language for error messages that suggest a constructive solution instead of just an error code. [cite: 59, 60, 61]
+* [cite_start]**Help and Documentation:** While systems should be intuitive, provide searchable help or tooltips for complex tasks. [cite: 62, 63, 64, 65]
+
+---
+
+## 2. WCAG (Web Content Accessibility Guidelines)
+[cite_start]To satisfy the **Visual Design and Accessibility** requirement of your assignment, you should follow the **POUR** framework: [cite: 12]
+
+* [cite_start]**Perceivable:** Information must be presented in ways users can perceive (e.g., alt-text for images, high color contrast). [cite: 12]
+* [cite_start]**Operable:** The interface cannot require interactions that a user cannot perform (e.g., making the entire site keyboard-navigable). [cite: 30]
+* **Understandable:** Users must be able to understand the information and the operation of the UI.
+* **Robust:** Content must be robust enough that it can be interpreted by a wide variety of user agents, including assistive technologies.
+
+---
+
+## 3. Shneiderman’s Eight Golden Rules
+[cite_start]These complement Nielsen’s heuristics and are excellent for defending your design decisions during your presentation: [cite: 15]
+
+1.  **Strive for Consistency:** Consistent sequences of actions should be required in similar situations.
+2.  [cite_start]**Enable Frequent Users to Use Shortcuts:** Use abbreviations, function keys, and hidden commands. [cite: 13, 108]
+3.  [cite_start]**Offer Informative Feedback:** For every user action, there should be a system response. [cite: 10, 25]
+4.  **Design Dialogs to Yield Closure:** Sequences of actions should be organized into groups with a beginning, middle, and end.
+5.  [cite_start]**Offer Error Prevention and Simple Error Handling:** As mentioned in your brief, help the user easily correct mistakes. [cite: 11, 27]
+6.  [cite_start]**Permit Easy Reversal of Actions:** This relieves anxiety and encourages exploration. [cite: 105]
+7.  **Support Internal Locus of Control:** Give users the sense that they are in charge of the system.
+8.  **Reduce Short-term Memory Load:** Keep displays simple and provide sufficient training time.
+
+---
+
+## 4. Key UX Laws (The "Math" of HCI)
+[cite_start]Using these in your project defense will show deep technical knowledge: [cite: 2, 14]
+
+* **Fitts’s Law:** The time to acquire a target is a function of the distance to and size of the target.
+    * *Formula:* $MT = a + b \cdot \log_2\left(\frac{2D}{W} + 1\right)$
+    * *Practical application:* Make important buttons (like "Buy Now") large and place them near the user's expected cursor path.
+* **Hick’s Law:** The time it takes to make a decision increases with the number and complexity of choices.
+    * [cite_start]*Practical application:* Keep your navigation menus (which must be at least two levels deep) logically grouped to avoid overwhelming the user. [cite: 6, 9]
+
+---
+
+## 5. Specific Assignment Checklist
+Based on your provided documentation, ensure your prototype specifically includes:
+
+* [cite_start]**Navigation Depth:** A home page plus at least two sub-levels (e.g., Home > Products > Specific Item). [cite: 6]
+* [cite_start]**Interactive UI:** Fully interactive elements even if the backend is minimal. [cite: 7]
+* [cite_start]**Visual Consistency:** A suitable color palette and intuitive icons. [cite: 29, 107]
+* [cite_start]**Search Efficiency:** A functional or simulated search that helps users find content quickly. [cite: 24, 102]
+
+
+
+[cite_start]Since you need to present and defend your design, which specific UI challenge are you considering addressing for your "required challenge and solution" section? [cite: 16]
+
+refer to these pages FOR THEORY  to provide a peak website that adheres to Human-Computer Interaction (HCI) standards. 
+https://www.geeksforgeeks.org/system-design/guidelines-in-human-computer-interfacehci/#visual-design
+https://www.sitepoint.com/computer-interaction-site/
+https://www.figma.com/resource-library/human-computer-interaction/
+https://www.figma.com/resource-library/human-computer-interaction/
